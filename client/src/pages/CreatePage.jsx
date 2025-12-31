@@ -31,14 +31,19 @@ const CreatePage = () => {
     try{
       setErrMsg("")
       setLoading(true);
-      if(!newPost.prompt){
+      let prompt = newPost.prompt;
+      let mock = false;
+      if(prompt.endsWith("#MOCK#")){ 
+        prompt = prompt.slice(0, -6).trim();
+        mock = true;
+      }
+      if(!prompt){
         setErrMsg("Prompt is required!")
         return
       }
-      let payload = { prompt: newPost.prompt, mock: true }
       let baseURL = import.meta.env.DEV? devURL : prodURL;
       // console.log("Base URL:", baseURL);
-      let response = await axios.post(`${baseURL}/generate`, payload) 
+      let response = await axios.post(`${baseURL}/generate`, { prompt, mock}) 
       // console.log("create page 1: ", response.data, " | ", typeof(response.data.b64))
       setNewPost({...newPost, imageUrl: response.data.imageUrl})
     } catch(err){
