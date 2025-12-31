@@ -1,0 +1,77 @@
+[{
+  "_id": {
+    "$oid": "67865190d490497100f7cd52"
+  },
+  "name": "Ken",
+  "prompt": "a macro 35mm photograph of two mice in Hawaii, they're each wearing tiny swimsuits and are carrying tiny surfboards, digital art",
+  "photo": "https://res.cloudinary.com/dnord3ana/image/upload/v1736855760/digi_qnjuai.png"
+},
+{
+  "_id": {
+    "$oid": "67865379d490497100f7cd53"
+  },
+  "name": "Anonymous",
+  "prompt": "a sea otter with a pearl earring by Johannes Vermeer",
+  "photo": "https://res.cloudinary.com/dnord3ana/image/upload/v1736856253/otter_poyyvc.jpg"
+},
+{
+  "_id": {
+    "$oid": "67865431d490497100f7cd54"
+  },
+  "name": "Coloured powders ",
+  "prompt": "A centered explosion of colorful powder on a black background",
+  "photo": "https://res.cloudinary.com/dnord3ana/image/upload/v1736856379/rainbow_bomb_iusqb0.jpg"
+},
+{
+  "_id": {
+    "$oid": "678654cdd490497100f7cd55"
+  },
+  "name": "Hot air ballon",
+  "prompt": "A 3D render of a rainbow colored hot air balloon flying above a reflective lake",
+  "photo": "https://res.cloudinary.com/dnord3ana/image/upload/v1736856286/hot_air_ballon_kutjbx.jpg"
+},
+{
+  "_id": {
+    "$oid": "67865e50baa3d2f4f5467626"
+  },
+  "name": "Capybara",
+  "prompt": "an oil painting portrait of a capybara wearing medieval royal robes and an ornate crown on a dark background",
+  "photo": "https://res.cloudinary.com/dnord3ana/image/upload/v1736859216/background.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6786c01f21daccdd4a8d792b"
+  },
+  "name": "Ken kaneki",
+  "prompt": "A boy codes heavily at midnight to satisfy his ego and is desperately trying to overcome his sleepiness. The anime art style shows a lightning-like effect in the boy's eye, which is purple.",
+  "photo": "https://res.cloudinary.com/dnord3ana/image/upload/v1736884253/is%20purple..png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67877c24103cce4a0d7804e5"
+  },
+  "name": "Riaz",
+  "prompt": "a fortune-telling shiba inu reading your fate in a giant hamburger, digital art",
+  "photo": "https://res.cloudinary.com/dnord3ana/image/upload/v1736932387/igital%20art.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6788c645dbbf6d90da781eac"
+  },
+  "name": "Emoji God",
+  "prompt": "Angry emoji fighting with laughing emoji.",
+  "photo": "https://res.cloudinary.com/dnord3ana/image/upload/v1737016900/ing%20emoji..jpg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6788df1af5d72e99c59bda1b"
+  },
+  "name": "Sahid khan",
+  "prompt": "A photo of a white fur monster standing in a purple room",
+  "photo": "https://res.cloudinary.com/dnord3ana/image/upload/v1737023258/urple%20room.jpg",
+  "__v": 0
+}]

@@ -1,0 +1,77 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --breakpoint-xs: 480px;
+
+  --font-inter: Inter var, sans-serif;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+input:focus, textarea:focus{
+  outline: none;
+  border-color:#515457 ;
+}
+input, textarea{
+  @apply bg-transparent rounded-md;
+}
+
+button:hover{
+  filter: brightness(1.05)
+}
+button:active{
+  filter: brightness(1.2)
+}
+
+.card_cont > article{
+  transition: all 0.3s;
+}
+.card_cont:hover > article{
+  @apply bottom-1
+}
+
+.card_cont > img{
+  transition: all 0.5s;
+}
+.card_cont:hover > img{
+  transform: scale(1.1);
+}
+
+main > section{
+  max-width: 700px;
+  margin-inline: auto;
+  @apply md:max-w-250
+}
+
+/* address{
+  color:#2525258f;
+} 
+
+@media screen and (min-width: 480px) {
+  .card:nth-child(7n + 1) {
+    grid-column: auto/span 2;
+    grid-row: auto/span 2;
+  }
+} */
