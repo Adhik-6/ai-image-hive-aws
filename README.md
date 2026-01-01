@@ -91,12 +91,12 @@ The system follows a strictly decoupled **Event-Driven Architecture**:
 1. **Frontend:** React (Vite) hosted on *AWS Amplify*.
 2. **API Layer:** *Amazon API Gateway* (REST) routes requests to *Lambda*.
 3. **Compute (Lambda):**
-  * `generate-image-function`: Calls Hugging Face, saves to *S3* (`drafts/`).
-  * `share-image-function`: Moves objects from *S3* (`drafts/`) → (`feed/`) and puts the item into DB.
-  * `get-feed-function`: Queries *DynamoDB* Index for the latest public posts.
+   * `generate-image-function`: Calls Hugging Face, saves to *S3* (`drafts/`).
+   * `share-image-function`: Moves objects from *S3* (`drafts/`) → (`feed/`) and puts the item into DB.
+   * `get-feed-function`: Queries *DynamoDB* Index for the latest public posts.
 4. **Storage:**
-  * **S3:** Stores raw image assets (PNG).
-  * **DynamoDB:** Stores metadata (imageId, name (author), prompt, imageUrl, createdAt, type).
+   * **S3:** Stores raw image assets (PNG).
+   * **DynamoDB:** Stores metadata (imageId, name (author), prompt, imageUrl, createdAt, type).
 5. **Delivery:** *CloudFront* CDN caches images from *S3*.
 
 ### :dart: Features
