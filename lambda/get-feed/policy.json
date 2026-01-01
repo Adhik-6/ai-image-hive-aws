@@ -1,0 +1,14 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "Statement1",
+			"Effect": "Allow",
+			"Action": "dynamodb:Query",
+			"Resource": [
+				"arn:aws:dynamodb:us-east-1:386636311901:table/ai-image-hive-table",
+				"arn:aws:dynamodb:us-east-1:386636311901:table/ai-image-hive-table/index/type_based_feed"
+			]
+		}
+	]
+}

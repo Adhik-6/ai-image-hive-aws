@@ -1,0 +1,26 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "Statement1",
+			"Effect": "Allow",
+			"Action": [
+				"s3:GetObject",
+				"s3:DeleteObject"
+			],
+			"Resource": "arn:aws:s3:::ai-image-hive-bucket/drafts/*"
+		},
+		{
+			"Sid": "Statement2",
+			"Effect": "Allow",
+			"Action": "s3:PutObject",
+			"Resource": "arn:aws:s3:::ai-image-hive-bucket/feed/*"
+		},
+		{
+			"Sid": "Statement3",
+			"Effect": "Allow",
+			"Action": "dynamodb:PutItem",
+			"Resource": "arn:aws:dynamodb:us-east-1:386636311901:table/ai-image-hive-table"
+		}
+	]
+}
