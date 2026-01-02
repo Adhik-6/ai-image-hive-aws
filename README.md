@@ -162,7 +162,8 @@ Since this project uses a serverless architecture, you must provision the backen
 #### 2. S3 Bucket Setup   <!-- omit in toc -->
 1. Create a generic S3 bucket (e.g., `my-unique-app-name-assets`).
 2. Create two folders inside: `drafts/` and `feed/`.
-3. **CORS Configuration:** Go to the **Permissions** tab, scroll to CORS, and paste this JSON:
+3. Make sure to add a lifecycle rule to delete objects in `drafts/` after 1 day to save storage costs.
+4. **CORS Configuration:** Go to the **Permissions** tab, scroll to CORS, and paste this JSON:
 ```json
 [
   {
