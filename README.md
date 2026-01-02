@@ -70,6 +70,7 @@ AI Image Hive is a serverless, event-driven web application that allows users to
 * **Language:** JavaScript (ES6+)
 * **Styling:** Tailwind CSS
 * **HTTP Client:** Axios
+* **Hosting:** AWS Amplify
 
 #### Backend (AWS)   <!-- omit in toc -->
 * **Compute:** AWS Lambda (Node.js)
@@ -77,7 +78,6 @@ AI Image Hive is a serverless, event-driven web application that allows users to
 * **Database:** Amazon DynamoDB (Single Table Design with GSI)
 * **Storage:** Amazon S3
 * **CDN:** Amazon CloudFront
-* **IaC / CI/CD:** AWS Amplify Gen 2
 
 #### Other Services   <!-- omit in toc -->
 - **Image Generation:** Hugging Face (Inference API)
