@@ -134,8 +134,10 @@ This project adheres to the **Principle of Least Privilege**. No generic admin r
 
 ## 🔮 Future Improvements
 - [ ] Add User Authentication via AWS Cognito.
+- [ ] Image moderation pipeline.
+- [ ] Asynchronous Image Generation with SNS + SQS.
 - [ ] Implement AI model selection (Switch between FLUX, SDXL).
-- [ ] Add "Like" functionality using DynamoDB Atomic Counters.
+- [ ] Community ranking for images.
 
 <!-- Getting Started -->
 ## 	:toolbox: Getting Started
